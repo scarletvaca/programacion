@@ -1,0 +1,24 @@
+// scarlet.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+ 
+using namespace std;
+
+void main()
+
+{
+	float n,x,s=0,i;
+	cout<<"n:" ;
+	cin>>n;
+	cout<<"x:";
+	cin>>x;
+	for (i=1;i<n;i=i+1)
+	    {s=pow(x,i)+s;
+	    }
+	cout<<"s="<<s;
+    getch();
+}
