@@ -1,0 +1,25 @@
+// ciclos 2.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int main ()
+{int i,n,d,r,s;
+cin>>n;
+cin>>r;
+i=0;
+s=0;
+while (n!=0)
+{d=n%r;
+d=d*powf(10,i);
+s=s+d;
+n=n/r;
+i++;
+}
+cout<<s;
+	return 0;
+}
