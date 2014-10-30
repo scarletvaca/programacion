@@ -1,0 +1,64 @@
+// scarletvaca.cpp : Defines the entry point for the console application.
+//
+#include "stadafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+#include "stdlib.h"
+
+
+
+using namespace std;
+
+float calcular (float base, float altura);
+int serie (int n);
+float circulo (float r);
+
+void main ()
+{float base ,altura ,area ,circulo,r;
+int n, i , suma ,opcion;
+do 
+ {
+  cout<<"menu" <<endl;
+  cout<<"1.serie"<<enld;
+  cout<<"2.area de un triangulo"<<endl;
+  cout<<"3.area de un circulo"<<endl;
+  cout<<"0.salir"<<endl;
+  cin>>opcion;
+  swith(opcion)
+  {case 1:
+     cout<<"serie"<<endl;
+     cout<<"ingrese n";
+	 cin>>n;
+	 suma=serie(n);  // Es la llamada de la función serie
+  	 cout<<"la suma es "<<suma;
+	 break;
+   case 2:
+	  cout<<"ingrese base: ";
+	  cin >>base ;
+	  cout<<"ingrese altura :";
+	  cin >>altura;
+	  area=calcular(base ,altura);
+	  cout <<"el area es :"<<area<<endl;
+	  break;
+   case 3:
+	  cout<<"area del circulo:"<<endl;
+	  cout<<"ingrese radio";
+	  cin>> r;
+	  area c=circulo (r);
+	  cout<<"el area del circulo es"<<area<<endl;
+	  break;
+   case 0:
+	  cout<< "salir "<<endl;
+	  break;
+	  defaut;
+	  cout<<"error";
+	  sistem ("cls");
+	  while(opcion!=0);
+	  break;
+     
+	  return 0;
+  }
+
+ }
+}
