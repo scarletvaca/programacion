@@ -1,0 +1,35 @@
+// ecuacion cuadratica formula.cpp : Defines the entry point for the console application.
+// Scarlet Vaca Alvarez
+
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+ 
+using namespace std;
+
+int main()
+
+{
+
+ float a,b,c,d;
+ double x1,x2;
+ cin>>a;
+ cin>>b;
+ cin>>c;
+ d=pow(b,2)-4*a*c;
+ if(d>0)
+  {x1=(-b+sqrt(d))/2*a;
+   x2=(-b-sqrt(d))/2*a;
+   cout<<"x1="<<x1;
+   cout<<"x2=\n"<<x2;
+  }
+ else
+	 cout<<"No son numeros reales";
+ 
+getch();
+
+
+	return 0;
+
+}
