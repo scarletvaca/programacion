@@ -1,0 +1,26 @@
+// ejercicio de factorial.cpp : Defines the entry point for the console application.
+//Scarlet Vaca Alvarez
+ 
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+ 
+using namespace std;
+void main()
+{
+	int j,n,x,p;
+	float s,i;
+	cout<<"Ingrese el valor de n:";
+	cin>>n;
+	cout<<"Ingrese el valor de x: ";
+    cin>>x;
+	s=5;
+	for(i=2;i<=n;i=i+2)
+	 p=1;
+	  for(j=1;j<=i;j=j+1)
+		  p=p*j;
+	s=s+pow(x,i)/p;
+	cout<<"La sumatoria es: "<<s;
+	getch();
+}
