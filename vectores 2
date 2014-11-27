@@ -1,0 +1,50 @@
+// PROGRAMA DE VECTORES.cpp : Defines the entry point for the console application.
+// SCARLET VACA
+// Laboratorio
+ 
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+ 
+#define TAM 100
+using namespace std;
+ 
+void leer_vector (int vec[], int n);
+void mostrar_vector (int vec[],int n);
+void incremento_vector(int vec[],int n);
+void main()
+{
+	int v[TAM],m;
+	do
+	{cout<<"Ingrese el numero de elementos: ";
+	cin>>m;
+	}while ((m>TAM)||(m<=0));
+	leer_vector(v,m);
+	incremento_vector(v,m);
+	mostrar_vector(v,m);
+	
+	getch();
+}
+ 
+void leer_vector (int vec[], int n)
+ { int i;
+   for(i=0;i<n;i++)
+      {cout<<"["<<i<<"]= ";
+       cin>>vec[i];}
+ }
+ 
+void mostrar_vector (int vec[],int n)
+{  int i;
+   for (i=0;i<n;i++)
+      {cout<<"["<<i<<"]= ";
+       cout<<"El incremento es igual a: ";    
+       cout<<vec[i]<<"\n";}
+ 
+}
+ 
+void incremento_vector(int vec[],int n)
+{ int i;
+  for(i=0;i<n;i++)
+  vec[i]=vec[i]*1.10;
+}
+
