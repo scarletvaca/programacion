@@ -1,0 +1,35 @@
+// LABORATORIO DE PROGRAMACION: de base 10 a base r.cpp : Defines the entry point for the console application.
+// Scarlet Vaca Alvarez
+
+ 
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+ using namespace std;
+
+
+void main()
+
+{
+
+	int r,n,d,p;
+	float s,cont;
+	cout<<"Ingrese el numero:";
+	cin>>n;
+	cout<<"Ingrese la base a la que desea convertir: ";
+	cin>>r;
+	cont=0;
+	s=0;
+	while(n!=0)
+	{d=n%r;
+	n=n/r;
+	p=pow(10,cont);
+	s=s+d*p;
+	cont=cont+1;}
+	cout<<"El numero en base r es:"<<s;
+
+	getch();
+
+}
+
